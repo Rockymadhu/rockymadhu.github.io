@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Madhuvanthi C E | Portfolio</title>
-  <a href="https://github.com/Rockymadhu/resume" target="_blank">
-  View Resume (PDF)
-  </a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (GitHub Icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- NAME -->
-<header>
-  <h1>Madhuvanthi C E</h1>
-  <p>Diploma Student – Computer Engineering & IoT</p>
+<!-- HERO -->
+<header class="hero">
+  <h1 class="fade-in">Madhuvanthi C E</h1>
+  <p class="fade-in delay">Diploma Student – Computer Engineering & IoT</p>
+
+  <a class="resume-btn fade-in delay2"
+     href="https://github.com/Rockymadhu/resume"
+     target="_blank">
+    <i class="fa-solid fa-file-pdf"></i> View Resume
+  </a>
 </header>
 
-<!-- INTRO -->
-<section>
+<!-- ABOUT -->
+<section class="card slide-up">
   <h2>Introduction</h2>
   <p>
     I am a diploma student in Computer Engineering & IoT with strong interest in
@@ -27,64 +39,57 @@
 </section>
 
 <!-- SKILLS -->
-<section>
+<section class="card slide-up">
   <h2>Skills</h2>
-  <ul>
-    <li>C / C++</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>Flutter & Dart</li>
-    <li>Arduino & IoT Sensors</li>
-    <li>GitHub & Cloud Platforms</li>
-  </ul>
+  <div class="skills">
+    <span>C / C++</span>
+    <span>Java</span>
+    <span>Python</span>
+    <span>Flutter & Dart</span>
+    <span>Arduino & IoT</span>
+    <span>GitHub & Cloud</span>
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section>
+<section class="card slide-up">
   <h2>Projects</h2>
 
-  <h3>Energixion – Renewable Energy IoT System</h3>
-  <p>
-    A smart renewable energy harvesting system that integrates solar, wind, and
-    piezoelectric sources with IoT-based monitoring.
-  </p>
-  <a href="https://github.com/Rockymadhu/energixion-project" target="_blank">
-    View Project Files on GitHub
-  </a>
+  <div class="project">
+    <h3>Energixion – Renewable Energy IoT</h3>
+    <p>Smart energy harvesting using solar, wind, and piezoelectric sources.</p>
+    <a href="https://github.com/Rockymadhu/energixion-project" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
 
-  <h3>AI Alert System</h3>
-  <p>
-    AI-based human detection system that triggers alerts using email and alarm
-    integration for security applications.
-  </p>
-  <a href="https://github.com/Rockymadhu/Ai-alert-system" target="_blank">
-    View Project Files on GitHub
-  </a>
+  <div class="project">
+    <h3>AI Alert System</h3>
+    <p>AI-based human detection system with alerts via email and alarm.</p>
+    <a href="https://github.com/Rockymadhu/Ai-alert-system" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
 
-  <h3>Personal Finance App</h3>
-  <p>
-    Flutter-based mobile application to track income and expenses with multi-user
-    support using local storage.
-  </p>
-  <a href="https://github.com/USERNAME/personal-finance-app" target="_blank">
-    View Project Files on GitHub
-  </a>
+  <div class="project">
+    <h3>Personal Finance App</h3>
+    <p>Flutter app to track income & expenses with multi-user support.</p>
+    <a href="#" target="_blank">
+      <i class="fab fa-github"></i> View on GitHub
+    </a>
+  </div>
 </section>
 
 <!-- INTERNSHIP -->
-<section>
-  <h2>Internship &Course Certifications</h2>
+<section class="card slide-up">
+  <h2>Internship & Certifications</h2>
   <h3>Omsevel – AI-based Company</h3>
   <p>
-    Gained hands-on experience in AI fundamentals, real-time applications, and
-    integration of AI with IoT systems.
+    Hands-on experience in AI fundamentals and integration of AI with IoT systems.
   </p>
-  <a href="https://github.com/USERNAME/certifications" target="_blank">
-    View Internship Certificate
-  </a>
 </section>
 
-<!-- LAST CONTENT -->
+<!-- FOOTER -->
 <footer>
   <p>Email: madhuvanthi.2747@gmail.com</p>
   <p>© 2025 Madhuvanthi C E</p>

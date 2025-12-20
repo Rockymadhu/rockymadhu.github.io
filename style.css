@@ -1,37 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  line-height: 1.6;
-  color: #333;
+  background: #0f0f0f;
+  color: #eaeaea;
+  line-height: 1.7;
 }
 
-header {
+/* HERO */
+.hero {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #1f1f1f, #0f0f0f);
 }
 
-h1 {
-  color: #2c3e50;
+.hero h1 {
+  font-size: 3rem;
+  color: #00ffd5;
 }
 
-h2 {
-  margin-top: 40px;
-  color: #34495e;
-  border-bottom: 1px solid #ccc;
+.hero p {
+  margin-top: 10px;
+  color: #aaa;
 }
 
-a {
-  color: #0066cc;
+.resume-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #00ffd5;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,255,213,0.4);
+}
+
+/* CARD SECTIONS */
+.card {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #161616;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+  color: #00ffd5;
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills span {
+  background: #222;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project {
+  margin-top: 25px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #00ffd5;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.project a i {
+  margin-right: 6px;
 }
 
+/* FOOTER */
 footer {
-  margin-top: 50px;
   text-align: center;
-  font-size: 14px;
+  padding: 30px;
   color: #777;
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.delay {
+  animation-delay: 0.5s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

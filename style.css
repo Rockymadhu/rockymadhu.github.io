@@ -292,4 +292,59 @@ footer {
   z-index: 5;
   pointer-events: auto;
 }
+/* =======================
+   MOBILE NAVBAR
+======================= */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(20,20,20,0.95);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 18px;
+    display: none;
+    width: 200px;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+}
 

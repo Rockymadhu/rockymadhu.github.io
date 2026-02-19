@@ -194,12 +194,23 @@ body::after {
    PROJECT LINKS
 ======================= */
 .project a {
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 10px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: rgba(155,92,255,0.15);
+  border: 1px solid rgba(155,92,255,0.4);
   color: #9b5cff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .project a:hover {
-  text-decoration: underline;
+  background: #9b5cff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(155,92,255,0.35);
 }
 
 /* =======================

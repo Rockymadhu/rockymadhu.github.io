@@ -196,7 +196,7 @@ body::after {
 .project a {
   display: inline-block;
   margin-top: 12px;
-  margin-right: 10px;
+  margin-right: 12px;
   padding: 8px 18px;
   border-radius: 20px;
   background: rgba(155,92,255,0.15);
